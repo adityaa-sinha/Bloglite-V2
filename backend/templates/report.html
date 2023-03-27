@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monthly Engagement Report</title>
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+      }
+      .logo-image {
+        border-style: solid;
+        border-color: black;
+        border-radius: 30%;
+      }
+      .content {
+        margin: 3rem;
+      }
+      .row {
+        display: flex;
+      }
+      .col {
+        width: 33%;
+      }
+      table {
+        background-color: beige;
+      }
+      tr {
+        height: 3rem;
+      }
+      td {
+        width: 10rem;
+        border: 2px solid black;
+      }
+      .footer {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="cid:logo"
+        class="logo-image"
+        alt=""
+        height="50px"
+        width="50px"
+      />
+    </div>
+    <div class="content">
+      <p>Hi, <b>{{username}}</b></p>
+      <p>
+        Please find below your Bloglite account's monthly engagement report for
+        the month of <b>{{month}}</b>
+      </p>
+      <hr />
+      <div class="row">
+        <h3>Your stats till now</h3>
+      </div>
+      <div class="row">
+        <table>
+          <tr>
+            <td>Total no. of posts</td>
+            <td>{{data.total_posts}}</td>
+          </tr>
+          <tr>
+            <td>Followers count</td>
+            <td>{{data.followers_count}}</td>
+          </tr>
+          <tr>
+            <td>Following count</td>
+            <td>{{data.following_count}}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="row">
+        <h3>Number of blogs posted this month: <span style="color: green;">{{data.posted_thismonth}}</span></h3>
+      </div>
+      <div class="footer">
+        <hr />
+        <p>Keep using Bloglite</p>
+        <p>Regards</p>
+        <p>Team Bloglite.</p>
+      </div>
+    </div>
+  </body>
+</html>
