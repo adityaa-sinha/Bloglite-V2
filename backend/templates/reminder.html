@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Reminder</title>
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+      }
+      .logo-image {
+        border-style: solid;
+        border-color: black;
+        border-radius: 30%;
+      }
+      .content {
+        margin: 3rem;
+      }
+      .row {
+        display: flex;
+      }
+      .col {
+        width: 33%;
+      }
+      table {
+        background-color: beige;
+      }
+      tr {
+        height: 3rem;
+      }
+      td {
+        width: 10rem;
+        border: 2px solid black;
+      }
+      .footer {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="cid:logo"
+        class="logo-image"
+        alt=""
+        height="50px"
+        width="50px"
+      />
+    </div>
+    <div class="content">
+      <p>Hi, <b>{{username}}</b></p>
+      <p>We hope this email finds you well.</p>
+      <div class="row">
+        <p>
+          Our records show that you last posted on Bloglite <b>{{days_count}}</b> day(s)
+          ago.
+        </p>
+    </div>
+    <div class="row">
+          This email is just to remind you that your readers miss reading your
+          wonderful blogs. Get started with writing a blog today.
+      </div>
+
+      <div class="footer">
+        <hr />
+        <p>Keep using Bloglite</p>
+        <p>Regards</p>
+        <p>Team Bloglite.</p>
+      </div>
+    </div>
+  </body>
+</html>
